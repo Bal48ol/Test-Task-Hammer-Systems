@@ -28,20 +28,4 @@ public class Pizza {
     public int getImage() {
         return image;
     }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
-    }
-
-    public void setImage(int image) {
-        this.image = image;
-    }
 }
