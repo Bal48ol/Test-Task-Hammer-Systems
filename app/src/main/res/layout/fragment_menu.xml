@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/toolbar_menu">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/city"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium">
+        </TextView>
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp">
+        </Space>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_keyboard_arrow_down_24">
+        </ImageView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewImgPager"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/toolbarView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewImgPager"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:tabMode="scrollable"
+        app:tabGravity="center"
+        app:tabIndicatorGravity="stretch"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabSelectedTextColor="@color/theme"
+        app:tabIndicator="@drawable/tab_indicator">
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabLayout">
+    </androidx.viewpager2.widget.ViewPager2>
+
+</RelativeLayout>

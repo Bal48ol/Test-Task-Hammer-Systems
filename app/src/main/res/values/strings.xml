@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HammerSystemsTest</string>
+    <string name="title_menu">Меню</string>
+    <string name="title_profile">Профиль</string>
+    <string name="title_cart">Корзина</string>
+    <string name="city">Тверь</string>
+</resources>
